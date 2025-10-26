@@ -11,10 +11,13 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "chrome-extension://idlieogljpnggcplmahhkflpbadikmkm"
+    ],
     methods: ["POST", "GET"],
   })
 );
+
 
 const urls: string[] = [
   //   "https://medium.com/tag/n8n",

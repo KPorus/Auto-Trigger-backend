@@ -46,7 +46,9 @@ const email_1 = require("./email");
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
-    origin: "*",
+    origin: [
+        "chrome-extension://idlieogljpnggcplmahhkflpbadikmkm"
+    ],
     methods: ["POST", "GET"],
 }));
 const urls = [
