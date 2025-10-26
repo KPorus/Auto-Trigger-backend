@@ -12,7 +12,7 @@ const transporter = nodemailer_1.default.createTransport({
         pass: process.env.APP_PASS,
     },
 });
-console.log(process.env.GMAIL);
+// console.log(process.env.GMAIL);
 async function sendEmail({ to, subject, text }) {
     const mailOptions = {
         from: `<${process.env.GMAIL_USER}>`,

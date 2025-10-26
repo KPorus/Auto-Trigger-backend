@@ -8,7 +8,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-console.log(process.env.GMAIL);
+// console.log(process.env.GMAIL);
 
 export async function sendEmail({ to, subject, text }: {
   to: string;
